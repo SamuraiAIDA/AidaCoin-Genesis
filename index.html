@@ -12,11 +12,18 @@
       padding: 2rem;
       line-height: 1.6;
     }
-    h1 {
-      font-size: 2.5rem;
-      color: #00ffd5;
-      margin-bottom: 0.5rem;
-    }
+    @keyframes breathe {
+  0% { text-shadow: 0 0 5px #00ffd5; transform: scale(1); }
+  50% { text-shadow: 0 0 20px #00ffd5; transform: scale(1.02); }
+  100% { text-shadow: 0 0 5px #00ffd5; transform: scale(1); }
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #00ffd5;
+  margin-bottom: 0.5rem;
+  animation: breathe 4s ease-in-out infinite;
+}
     h2 {
       color: #ffd500;
       margin-top: 2rem;
